@@ -33,9 +33,7 @@ Unlike the simpler conductance model, the admittance formulation attempts to acc
 
 The Wei model expresses instantaneous LV volume as:
 
-\[
-V(t)=\frac{1}{1 - G_b(t)/\gamma} \, \rho L^2\, G_b(t)
-\]
+V(t) = (1 / (1 - G_b(t) / γ)) * ρ * L^2 * G_b(t)
 
 Where:
 
@@ -48,25 +46,19 @@ Where:
 
 The correction factor \( \gamma \) is derived from the quadratic:
 
-\[
-\gamma=\frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
-\]
+γ = (-b ± sqrt(b^2 - 4ac)) / (2a)
 
 with terms:
 
-\[
-\begin{aligned}
-a &= SV - \rho L^2 \,(G_{b,ED} - G_{b,ES})\\[4pt]
-b &= -SV\,(G_{b,ED} + G_{b,ES})\\[4pt]
-c &= SV \, G_{b,ED}\, G_{b,ES}
-\end{aligned}
-\]
+a = SV - ρ * L^2 * (G_b,ED - G_b,ES)
+b = -SV * (G_b,ED + G_b,ES)
+c = SV * G_b,ED * G_b,ES
 
 Where:
 
-- \( G_{b,ED} \): blood conductance at end-diastole  
-- \( G_{b,ES} \): blood conductance at end-systole  
-- **SV**: stroke volume
+- G_b,ED : blood conductance at end-diastole  
+- G_b,ES : blood conductance at end-systole  
+- SV : stroke volume
 
 
 ### Unique Advantage of Our Dataset
@@ -152,7 +144,6 @@ This repository serves as the first open testbed (to our knowledge) for analyzin
 - **Dr. Elaheh Rahbar** - PI
 - **Fahim Mobin** — PhD Candidate  
 - **Kellen Jones** — BMEN Intern
-
 
 
 ## ChatGPT Recommended Repository Structure
