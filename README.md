@@ -146,14 +146,19 @@ This repository serves as the first open testbed (to our knowledge) for analyzin
 - **Kellen Jones** — BMEN Intern
 
 
-## ChatGPT Recommended Repository Structure
-/data_raw/ Raw magnitude, phase, and flow recordings
-/data_processed/ Cleaned signals, cardiac cycle segmentation
-/notebooks/ Jupyter notebooks for replication and analysis
-/src/
-admittance/ Signal processing + G_b calculation
-wei_model/ Wei equation reconstruction
-validation/ Comparison to device LV volume
-ML_models/ Exploratory machine learning alternatives
-/results/ Plots, metrics, model comparisons
-/docs/ Additional documentation
+## Current File Structure
+- /data_raw/ Raw magnitude, phase, and flow recordings. - NOTE: for now, this is kept as a .zip file for now.
+- /results/ Plots, metrics, model comparisons.
+- /raw_code/ Location for the Jupyter notebooks for testing.
+- /docs/ Prospective paper draft, documentation, etc.
+
+
+## Additional Suggested Directories to Keep as Per GPT Suggestions
+- /data_processed/ Cleaned signals, cardiac cycle segmentation
+- /notebooks/ Jupyter notebooks for replication and analysis
+- /src/
+- /admittance/ Signal processing + G_b calculation
+- /wei_model/ Wei equation reconstruction
+- /validation/ Comparison to device LV volume
+- /ML_models/ Exploratory machine learning alternatives
+- /docs/ Additional documentation
